@@ -1,3 +1,2 @@
-#RDG
-
-Random Dungeon Generator
+RDG
+===
