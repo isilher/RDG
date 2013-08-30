@@ -6,7 +6,7 @@ class Auth extends MY_Controller {
 		parent::__construct();
 		
 		// Load controller specific language file
-		$this->load->language('cc_auth');
+		$this->load->language('rdg_auth');
 
 		// Handle messages and errors
 		// TODO: Use other system
@@ -14,10 +14,8 @@ class Auth extends MY_Controller {
 		$this->data['error'] = $this->session->flashdata('error');		
 	}
 	
-	function index() {
-
-		// Title, content, template
-		//$this->data['title'] = lang('auth');
+	function index() 
+	{
 		$this->data['content'] = 'auth/index.php';	
 		$this->load->view('template', $this->data);
 	}
